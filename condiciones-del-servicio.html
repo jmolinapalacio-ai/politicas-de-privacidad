@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Condiciones del Servicio — Habi Broker Medellín</title>
+  <style>
+    :root {
+      --primary: #1a3a5c;
+      --accent:  #e8a020;
+      --text:    #1f2937;
+      --muted:   #6b7280;
+      --border:  #e5e7eb;
+      --bg:      #f9fafb;
+      --white:   #ffffff;
+      --radius:  8px;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+      font-size: 16px;
+      line-height: 1.75;
+      color: var(--text);
+      background: var(--bg);
+    }
+
+    header {
+      background: var(--primary);
+      color: var(--white);
+      padding: 48px 24px 40px;
+      text-align: center;
+    }
+
+    header .badge {
+      display: inline-block;
+      background: var(--accent);
+      color: var(--white);
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      padding: 4px 12px;
+      border-radius: 20px;
+      margin-bottom: 16px;
+    }
+
+    header h1 {
+      font-size: clamp(22px, 4vw, 32px);
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 14px;
+      opacity: .75;
+      max-width: 520px;
+      margin: 0 auto;
+    }
+
+    .container {
+      max-width: 820px;
+      margin: 0 auto;
+      padding: 48px 24px 80px;
+    }
+
+    .toc {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 28px 32px;
+      margin-bottom: 40px;
+    }
+
+    .toc h2 {
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 14px;
+    }
+
+    .toc ol { padding-left: 20px; }
+    .toc li { margin-bottom: 6px; }
+    .toc a { color: var(--primary); text-decoration: none; font-size: 15px; }
+    .toc a:hover { text-decoration: underline; }
+
+    section {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 36px 40px;
+      margin-bottom: 24px;
+      scroll-margin-top: 20px;
+    }
+
+    section h2 {
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--primary);
+      padding-bottom: 12px;
+      border-bottom: 2px solid var(--accent);
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    section h2 .num {
+      background: var(--primary);
+      color: var(--white);
+      font-size: 12px;
+      font-weight: 700;
+      width: 26px;
+      height: 26px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    section p { margin-bottom: 14px; }
+    section p:last-child { margin-bottom: 0; }
+    section ul, section ol { padding-left: 22px; margin-bottom: 14px; }
+    section li { margin-bottom: 8px; }
+    section strong { color: var(--primary); }
+
+    .highlight {
+      background: #eff6ff;
+      border-left: 4px solid var(--primary);
+      border-radius: 0 var(--radius) var(--radius) 0;
+      padding: 16px 20px;
+      margin: 16px 0;
+      font-size: 15px;
+    }
+
+    .highlight.warn {
+      background: #fefce8;
+      border-color: var(--accent);
+    }
+
+    footer {
+      text-align: center;
+      padding: 32px 24px;
+      font-size: 13px;
+      color: var(--muted);
+      border-top: 1px solid var(--border);
+    }
+
+    footer a { color: var(--primary); text-decoration: none; }
+
+    @media (max-width: 600px) {
+      section { padding: 24px 20px; }
+      .toc { padding: 20px; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="badge">Documento legal vigente</div>
+  <h1>Condiciones del Servicio</h1>
+  <p>Asesoría Inmobiliaria Habi — Medellín, Colombia<br>
+     Vigente a partir del 16 de abril de 2026</p>
+</header>
+
+<div class="container">
+
+  <div class="toc">
+    <h2>Contenido</h2>
+    <ol>
+      <li><a href="#s1">Identificación y Alcance</a></li>
+      <li><a href="#s2">Descripción del Servicio</a></li>
+      <li><a href="#s3">Condiciones de Uso</a></li>
+      <li><a href="#s4">Obligaciones del Usuario</a></li>
+      <li><a href="#s5">Obligaciones del Prestador</a></li>
+      <li><a href="#s6">Naturaleza de la Asesoría</a></li>
+      <li><a href="#s7">Limitación de Responsabilidad</a></li>
+      <li><a href="#s8">Propiedad Intelectual</a></li>
+      <li><a href="#s9">Comunicaciones y Canales Digitales</a></li>
+      <li><a href="#s10">Terminación del Servicio</a></li>
+      <li><a href="#s11">Ley Aplicable y Jurisdicción</a></li>
+      <li><a href="#s12">Modificaciones y Vigencia</a></li>
+    </ol>
+  </div>
+
+  <!-- 1 -->
+  <section id="s1">
+    <h2><span class="num">1</span>Identificación y Alcance</h2>
+    <p>
+      Las presentes Condiciones del Servicio regulan la relación entre
+      <strong>Asesoría Inmobiliaria Habi — Broker Independiente</strong>
+      (en adelante "el Prestador"), con domicilio en Medellín, Antioquia, Colombia,
+      correo electrónico <strong>j.molinapalacio@icloud.com</strong>, y cualquier
+      persona natural o jurídica (en adelante "el Usuario") que acceda a nuestros
+      servicios de asesoría inmobiliaria a través de cualquier canal digital o presencial.
+    </p>
+    <p>
+      Al interactuar con nuestros anuncios en Meta (Facebook / Instagram), contactarnos
+      vía WhatsApp Business o por cualquier otro medio, el Usuario declara haber leído,
+      comprendido y aceptado la totalidad de estas condiciones.
+    </p>
+    <div class="highlight warn">
+      Si no está de acuerdo con alguna de estas condiciones, le pedimos abstenerse de
+      utilizar nuestros servicios y contactarnos para resolver cualquier inquietud antes
+      de proceder.
+    </div>
+  </section>
+
+  <!-- 2 -->
+  <section id="s2">
+    <h2><span class="num">2</span>Descripción del Servicio</h2>
+    <p>El Prestador ofrece los siguientes servicios de intermediación inmobiliaria:</p>
+    <ul>
+      <li>
+        <strong>Asesoría de compra:</strong> acompañamiento en la búsqueda, selección
+        y negociación de inmuebles residenciales en El Poblado, Laureles, Envigado,
+        Sabaneta y El Retiro (Medellín, Antioquia).
+      </li>
+      <li>
+        <strong>Presentación de inventario:</strong> envío de opciones de inmuebles del
+        portafolio de Habi Technologies S.A.S. ajustadas al perfil y presupuesto del Usuario.
+      </li>
+      <li>
+        <strong>Coordinación de visitas:</strong> agendamiento y acompañamiento en visitas
+        a inmuebles de interés.
+      </li>
+      <li>
+        <strong>Gestión de HabiCredit:</strong> orientación y referido hacia el proceso de
+        crédito hipotecario para usuarios que requieran financiación, en coordinación con
+        las entidades financieras vinculadas.
+      </li>
+      <li>
+        <strong>Seguimiento post-visita:</strong> asesoría continua hasta el cierre de la
+        operación inmobiliaria.
+      </li>
+    </ul>
+    <p>
+      Todos los inmuebles presentados pertenecen al inventario de
+      <strong>Habi Technologies S.A.S.</strong> El Prestador actúa como broker autorizado
+      y no es propietario de los inmuebles ofertados.
+    </p>
+  </section>
+
+  <!-- 3 -->
+  <section id="s3">
+    <h2><span class="num">3</span>Condiciones de Uso</h2>
+    <p>El acceso y uso de nuestros servicios está sujeto a las siguientes condiciones:</p>
+    <ul>
+      <li>
+        El Usuario debe ser <strong>mayor de 18 años</strong> y tener capacidad legal para
+        celebrar contratos en Colombia.
+      </li>
+      <li>
+        La información proporcionada por el Usuario debe ser <strong>veraz, completa y
+        actualizada</strong>. El Prestador no se responsabiliza por consecuencias derivadas
+        de información falsa o incompleta.
+      </li>
+      <li>
+        El servicio de asesoría inmobiliaria es <strong>gratuito para el comprador</strong>.
+        La comisión del broker es asumida por el vendedor (Habi Technologies S.A.S.) según
+        los acuerdos comerciales vigentes.
+      </li>
+      <li>
+        El uso de nuestros canales digitales (WhatsApp, formularios de Meta Ads) implica
+        el consentimiento para recibir comunicaciones relacionadas con el servicio solicitado.
+      </li>
+    </ul>
+  </section>
+
+  <!-- 4 -->
+  <section id="s4">
+    <h2><span class="num">4</span>Obligaciones del Usuario</h2>
+    <ul>
+      <li>
+        Proporcionar información verídica sobre su perfil, presupuesto y necesidades
+        inmobiliarias para recibir una asesoría adecuada.
+      </li>
+      <li>
+        Comunicar de forma oportuna cualquier cambio en sus condiciones o decisión de
+        no continuar con el proceso, para evitar visitas o gestiones innecesarias.
+      </li>
+      <li>
+        Respetar los horarios de atención hábiles: <strong>lunes a sábado, 8:00 a.m. –
+        6:00 p.m.</strong> (hora Colombia).
+      </li>
+      <li>
+        No utilizar los canales de comunicación para fines distintos a la asesoría
+        inmobiliaria (spam, publicidad no solicitada, contenido inapropiado).
+      </li>
+      <li>
+        Asistir puntualmente a las visitas agendadas o notificar con mínimo
+        <strong>2 horas de anticipación</strong> si necesita cancelar o reprogramar.
+      </li>
+    </ul>
+  </section>
+
+  <!-- 5 -->
+  <section id="s5">
+    <h2><span class="num">5</span>Obligaciones del Prestador</h2>
+    <ul>
+      <li>
+        Responder a leads nuevos en horario hábil en un plazo máximo de
+        <strong>30 minutos</strong> desde la recepción del contacto.
+      </li>
+      <li>
+        Presentar únicamente inmuebles que se ajusten al perfil, zona y presupuesto
+        indicados por el Usuario.
+      </li>
+      <li>
+        Mantener la <strong>confidencialidad</strong> de la información financiera y
+        personal del Usuario.
+      </li>
+      <li>
+        Informar de manera transparente sobre las condiciones, precios y características
+        de los inmuebles presentados.
+      </li>
+      <li>
+        Realizar seguimiento post-visita en un plazo máximo de <strong>24 horas</strong>
+        después de realizada la visita.
+      </li>
+      <li>
+        Tratar los datos personales del Usuario conforme a la
+        <strong>Política de Privacidad</strong> disponible en
+        <a href="index.html">este enlace</a>.
+      </li>
+    </ul>
+  </section>
+
+  <!-- 6 -->
+  <section id="s6">
+    <h2><span class="num">6</span>Naturaleza de la Asesoría</h2>
+    <p>
+      Es importante que el Usuario comprenda el alcance y los límites de nuestro servicio:
+    </p>
+    <ul>
+      <li>
+        La asesoría inmobiliaria que prestamos es de naturaleza <strong>comercial e
+        informativa</strong>. No constituye asesoría jurídica, financiera, fiscal
+        ni de inversión.
+      </li>
+      <li>
+        Para efectos legales de la compraventa (escrituración, estudio de títulos,
+        promesas de compraventa), el Usuario deberá contar con el acompañamiento de
+        un <strong>abogado habilitado</strong>.
+      </li>
+      <li>
+        El análisis de capacidad crediticia en el marco de HabiCredit es realizado
+        exclusivamente por las <strong>entidades financieras vinculadas</strong>. El
+        Prestador únicamente actúa como referidor y no garantiza la aprobación del crédito.
+      </li>
+      <li>
+        Los precios de los inmuebles son fijados por <strong>Habi Technologies S.A.S.</strong>
+        y pueden cambiar sin previo aviso. Los valores indicados durante la asesoría son
+        informativos y sujetos a confirmación.
+      </li>
+    </ul>
+  </section>
+
+  <!-- 7 -->
+  <section id="s7">
+    <h2><span class="num">7</span>Limitación de Responsabilidad</h2>
+    <p>El Prestador no será responsable por:</p>
+    <ul>
+      <li>
+        Cambios en los precios, disponibilidad o condiciones de los inmuebles del
+        inventario de Habi Technologies S.A.S.
+      </li>
+      <li>
+        Decisiones de inversión tomadas por el Usuario basadas en la asesoría recibida.
+      </li>
+      <li>
+        Fallas en las plataformas de terceros utilizadas para la prestación del servicio
+        (WhatsApp, Meta, Google).
+      </li>
+      <li>
+        Aprobación o negación de créditos hipotecarios por parte de entidades financieras.
+      </li>
+      <li>
+        Daños o perjuicios derivados del incumplimiento por parte del Usuario de las
+        obligaciones descritas en estas condiciones.
+      </li>
+    </ul>
+    <div class="highlight">
+      En ningún caso la responsabilidad del Prestador frente al Usuario superará el valor
+      de las comisiones efectivamente recibidas en la operación específica que dio origen
+      al reclamo.
+    </div>
+  </section>
+
+  <!-- 8 -->
+  <section id="s8">
+    <h2><span class="num">8</span>Propiedad Intelectual</h2>
+    <p>
+      Los contenidos generados por el Prestador — incluyendo textos, imágenes de anuncios,
+      presentaciones de inmuebles y materiales de comunicación — son de su exclusiva
+      propiedad o utilizados bajo licencia de Habi Technologies S.A.S.
+    </p>
+    <p>
+      Queda prohibida la reproducción, distribución o uso comercial de dichos contenidos
+      sin autorización expresa y por escrito del Prestador.
+    </p>
+    <p>
+      Las fotografías e información de los inmuebles son propiedad de
+      <strong>Habi Technologies S.A.S.</strong> y se usan bajo autorización expresa para
+      la actividad de intermediación.
+    </p>
+  </section>
+
+  <!-- 9 -->
+  <section id="s9">
+    <h2><span class="num">9</span>Comunicaciones y Canales Digitales</h2>
+    <p>
+      Al contactarnos a través de nuestros canales digitales, el Usuario acepta las
+      siguientes condiciones de comunicación:
+    </p>
+    <ul>
+      <li>
+        <strong>WhatsApp Business:</strong> las conversaciones podrán ser almacenadas
+        como parte del historial del CRM para garantizar la continuidad del servicio.
+      </li>
+      <li>
+        <strong>Meta Ads (Facebook / Instagram):</strong> al interactuar con nuestros
+        anuncios y completar formularios de contacto, el Usuario autoriza que lo
+        contactemos para brindar la asesoría solicitada.
+      </li>
+      <li>
+        El Usuario puede solicitar en cualquier momento que cese la comunicación
+        comercial respondiendo <strong>"STOP"</strong> por WhatsApp o enviando una
+        solicitud a <strong>j.molinapalacio@icloud.com</strong>.
+      </li>
+      <li>
+        No realizamos llamadas no solicitadas fuera del horario hábil ni enviamos
+        mensajes masivos no relacionados con la asesoría inmobiliaria.
+      </li>
+    </ul>
+  </section>
+
+  <!-- 10 -->
+  <section id="s10">
+    <h2><span class="num">10</span>Terminación del Servicio</h2>
+    <p>
+      Cualquiera de las partes puede dar por terminada la relación de asesoría en
+      cualquier momento y sin expresión de causa, mediante comunicación escrita al canal
+      correspondiente.
+    </p>
+    <p>El Prestador podrá suspender o terminar el servicio de forma inmediata si:</p>
+    <ul>
+      <li>El Usuario proporciona información falsa o engañosa.</li>
+      <li>El Usuario utiliza los canales de comunicación de forma abusiva o inapropiada.</li>
+      <li>
+        El Usuario incumple de forma reiterada los compromisos adquiridos (visitas
+        agendadas, plazos de respuesta, etc.).
+      </li>
+    </ul>
+    <p>
+      La terminación del servicio no afecta las obligaciones de confidencialidad y
+      protección de datos adquiridas por el Prestador.
+    </p>
+  </section>
+
+  <!-- 11 -->
+  <section id="s11">
+    <h2><span class="num">11</span>Ley Aplicable y Jurisdicción</h2>
+    <p>
+      Las presentes Condiciones del Servicio se rigen por las leyes de la
+      <strong>República de Colombia</strong>. Cualquier controversia derivada de su
+      interpretación o cumplimiento será resuelta en primera instancia mediante
+      negociación directa entre las partes.
+    </p>
+    <p>
+      De no lograrse un acuerdo, las partes se someterán a la jurisdicción de los
+      <strong>jueces competentes de la ciudad de Medellín, Antioquia</strong>,
+      renunciando a cualquier otro fuero que pudiera corresponderles.
+    </p>
+    <p>
+      Para asuntos relacionados con protección de datos personales, el Usuario podrá
+      acudir a la <strong>Superintendencia de Industria y Comercio (SIC)</strong>.
+    </p>
+  </section>
+
+  <!-- 12 -->
+  <section id="s12">
+    <h2><span class="num">12</span>Modificaciones y Vigencia</h2>
+    <p>
+      El Prestador se reserva el derecho de modificar estas Condiciones del Servicio en
+      cualquier momento. Las modificaciones sustanciales serán notificadas al Usuario con
+      un mínimo de <strong>10 días hábiles</strong> de antelación a su entrada en vigor,
+      a través de los canales de contacto disponibles.
+    </p>
+    <p>
+      El uso continuado del servicio tras la notificación de cambios implica la aceptación
+      de las nuevas condiciones.
+    </p>
+    <p>
+      Las presentes Condiciones del Servicio entran en vigor el
+      <strong>16 de abril de 2026</strong> y derogan cualquier versión anterior.
+    </p>
+    <div class="highlight">
+      Para cualquier consulta sobre estas condiciones, escríbenos a
+      <strong>j.molinapalacio@icloud.com</strong>. Atendemos de lunes a sábado,
+      8:00 a.m. – 6:00 p.m. (hora Colombia).
+    </div>
+  </section>
+
+</div>
+
+<footer>
+  <p>&copy; 2026 Asesoría Inmobiliaria Habi — Medellín, Colombia. Todos los derechos reservados.</p>
+  <p style="margin-top:8px;">
+    Rige la <strong>Ley 1480 de 2011</strong> (Estatuto del Consumidor) y demás normas comerciales colombianas vigentes.
+  </p>
+  <p style="margin-top:8px;">
+    <a href="index.html">← Política de Privacidad</a> &nbsp;·&nbsp;
+    <a href="eliminacion-datos.html">Eliminación de Datos</a>
+  </p>
+</footer>
+
+</body>
+</html>
