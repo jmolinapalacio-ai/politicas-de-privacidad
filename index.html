@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Políticas de Privacidad — Habi Broker Medellín</title>
+  <style>
+    :root {
+      --primary:   #1a3a5c;
+      --accent:    #e8a020;
+      --text:      #1f2937;
+      --muted:     #6b7280;
+      --border:    #e5e7eb;
+      --bg:        #f9fafb;
+      --white:     #ffffff;
+      --radius:    8px;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+      font-size: 16px;
+      line-height: 1.75;
+      color: var(--text);
+      background: var(--bg);
+    }
+
+    /* ── Header ── */
+    header {
+      background: var(--primary);
+      color: var(--white);
+      padding: 48px 24px 40px;
+      text-align: center;
+    }
+
+    header .badge {
+      display: inline-block;
+      background: var(--accent);
+      color: var(--white);
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      padding: 4px 12px;
+      border-radius: 20px;
+      margin-bottom: 16px;
+    }
+
+    header h1 {
+      font-size: clamp(22px, 4vw, 34px);
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 14px;
+      opacity: .75;
+      max-width: 520px;
+      margin: 0 auto;
+    }
+
+    /* ── Layout ── */
+    .container {
+      max-width: 820px;
+      margin: 0 auto;
+      padding: 48px 24px 80px;
+    }
+
+    /* ── TOC ── */
+    .toc {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 28px 32px;
+      margin-bottom: 40px;
+    }
+
+    .toc h2 {
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 14px;
+    }
+
+    .toc ol {
+      padding-left: 20px;
+    }
+
+    .toc li {
+      margin-bottom: 6px;
+    }
+
+    .toc a {
+      color: var(--primary);
+      text-decoration: none;
+      font-size: 15px;
+    }
+
+    .toc a:hover { text-decoration: underline; }
+
+    /* ── Sections ── */
+    section {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 36px 40px;
+      margin-bottom: 24px;
+      scroll-margin-top: 20px;
+    }
+
+    section h2 {
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--primary);
+      padding-bottom: 12px;
+      border-bottom: 2px solid var(--accent);
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    section h2 .num {
+      background: var(--primary);
+      color: var(--white);
+      font-size: 12px;
+      font-weight: 700;
+      width: 26px;
+      height: 26px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    section p {
+      margin-bottom: 14px;
+      color: var(--text);
+    }
+
+    section p:last-child { margin-bottom: 0; }
+
+    section ul, section ol {
+      padding-left: 22px;
+      margin-bottom: 14px;
+    }
+
+    section li {
+      margin-bottom: 8px;
+    }
+
+    section strong { color: var(--primary); }
+
+    /* ── Highlight box ── */
+    .highlight {
+      background: #eff6ff;
+      border-left: 4px solid var(--primary);
+      border-radius: 0 var(--radius) var(--radius) 0;
+      padding: 16px 20px;
+      margin: 16px 0;
+      font-size: 15px;
+    }
+
+    .highlight.warn {
+      background: #fefce8;
+      border-color: var(--accent);
+    }
+
+    /* ── Table ── */
+    .table-wrap { overflow-x: auto; margin: 16px 0; }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 14px;
+    }
+
+    thead th {
+      background: var(--primary);
+      color: var(--white);
+      padding: 10px 14px;
+      text-align: left;
+      font-weight: 600;
+    }
+
+    tbody tr:nth-child(even) { background: var(--bg); }
+
+    tbody td {
+      padding: 10px 14px;
+      border-bottom: 1px solid var(--border);
+      vertical-align: top;
+    }
+
+    /* ── Footer ── */
+    footer {
+      text-align: center;
+      padding: 32px 24px;
+      font-size: 13px;
+      color: var(--muted);
+      border-top: 1px solid var(--border);
+    }
+
+    footer a { color: var(--primary); text-decoration: none; }
+
+    /* ── Responsive ── */
+    @media (max-width: 600px) {
+      section { padding: 24px 20px; }
+      .toc  { padding: 20px; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ════════════════ HEADER ════════════════ -->
+<header>
+  <div class="badge">Documento legal vigente</div>
+  <h1>Política de Tratamiento de Datos Personales</h1>
+  <p>Asesoría Inmobiliaria Habi — Medellín, Colombia<br>
+     Vigente a partir del 16 de abril de 2026</p>
+</header>
+
+<!-- ════════════════ CONTENT ════════════════ -->
+<div class="container">
+
+  <!-- TOC -->
+  <div class="toc">
+    <h2>Contenido</h2>
+    <ol>
+      <li><a href="#s1">Identificación del Responsable</a></li>
+      <li><a href="#s2">Marco Legal Aplicable</a></li>
+      <li><a href="#s3">Datos Personales que Recopilamos</a></li>
+      <li><a href="#s4">Finalidades del Tratamiento</a></li>
+      <li><a href="#s5">Derechos de los Titulares</a></li>
+      <li><a href="#s6">Canales para Ejercer Derechos</a></li>
+      <li><a href="#s7">Transferencia y Transmisión de Datos</a></li>
+      <li><a href="#s8">Seguridad de la Información</a></li>
+      <li><a href="#s9">Conservación de los Datos</a></li>
+      <li><a href="#s10">Uso de Cookies y Plataformas Digitales</a></li>
+      <li><a href="#s11">Modificaciones a esta Política</a></li>
+      <li><a href="#s12">Vigencia</a></li>
+    </ol>
+  </div>
+
+  <!-- 1 -->
+  <section id="s1">
+    <h2><span class="num">1</span>Identificación del Responsable del Tratamiento</h2>
+    <p>
+      El responsable del tratamiento de los datos personales recopilados en el marco de la
+      actividad de asesoría inmobiliaria es:
+    </p>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr><th>Campo</th><th>Información</th></tr>
+        </thead>
+        <tbody>
+          <tr><td><strong>Nombre / Razón social</strong></td><td>Asesoría Inmobiliaria Habi — Broker Independiente</td></tr>
+          <tr><td><strong>Ciudad</strong></td><td>Medellín, Antioquia, Colombia</td></tr>
+          <tr><td><strong>Correo electrónico</strong></td><td>j.molinapalacio@icloud.com</td></tr>
+          <tr><td><strong>Zonas de operación</strong></td><td>El Poblado, Laureles, Envigado, Sabaneta, El Retiro</td></tr>
+          <tr><td><strong>Actividad principal</strong></td><td>Intermediación en compraventa y arrendamiento de bienes inmuebles</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- 2 -->
+  <section id="s2">
+    <h2><span class="num">2</span>Marco Legal Aplicable</h2>
+    <p>Esta política se rige por la normativa colombiana vigente en materia de protección de datos personales:</p>
+    <ul>
+      <li><strong>Constitución Política de Colombia</strong>, artículo 15 — Derecho al Habeas Data.</li>
+      <li><strong>Ley Estatutaria 1581 de 2012</strong> — Disposiciones generales para la protección de datos personales.</li>
+      <li><strong>Decreto 1377 de 2013</strong> — Reglamentación parcial de la Ley 1581 de 2012.</li>
+      <li><strong>Decreto 1074 de 2015</strong> — Decreto Único Reglamentario del Sector Comercio, Industria y Turismo.</li>
+      <li>Circulares y guías de la <strong>Superintendencia de Industria y Comercio (SIC)</strong>.</li>
+    </ul>
+    <div class="highlight">
+      Al proporcionarnos sus datos personales —ya sea a través de Meta Ads, WhatsApp Business,
+      formularios en línea o cualquier otro canal— usted declara haber leído, entendido y aceptado
+      la presente política.
+    </div>
+  </section>
+
+  <!-- 3 -->
+  <section id="s3">
+    <h2><span class="num">3</span>Datos Personales que Recopilamos</h2>
+    <p>En el desarrollo de nuestra actividad recopilamos, según el caso, los siguientes datos:</p>
+
+    <p><strong>Datos de identificación y contacto</strong></p>
+    <ul>
+      <li>Nombre completo</li>
+      <li>Número de cédula de ciudadanía o documento de identidad</li>
+      <li>Número de teléfono móvil (WhatsApp)</li>
+      <li>Correo electrónico</li>
+    </ul>
+
+    <p><strong>Datos de perfil inmobiliario</strong></p>
+    <ul>
+      <li>Propósito de compra (vivienda propia o inversión)</li>
+      <li>Zona de interés (El Poblado, Laureles, Envigado, Sabaneta, El Retiro)</li>
+      <li>Características del inmueble buscado (número de habitaciones, área, tipo)</li>
+      <li>Presupuesto mínimo y máximo (en millones de pesos colombianos)</li>
+      <li>Forma de pago preferida (contado o crédito hipotecario)</li>
+    </ul>
+
+    <p><strong>Datos financieros (únicamente para HabiCredit)</strong></p>
+    <ul>
+      <li>Ingresos mensuales</li>
+      <li>Tipo de contrato laboral</li>
+      <li>Banco principal</li>
+      <li>Valor del inmueble objetivo</li>
+    </ul>
+
+    <p><strong>Datos de navegación y publicidad digital</strong></p>
+    <ul>
+      <li>Interacciones con anuncios de Meta (Facebook/Instagram)</li>
+      <li>Historial de mensajes en WhatsApp Business relacionados con asesoría inmobiliaria</li>
+    </ul>
+
+    <div class="highlight warn">
+      <strong>Datos sensibles:</strong> No recopilamos de forma deliberada datos sensibles (salud,
+      origen étnico, orientación sexual, datos biométricos, etc.). Si en alguna comunicación usted
+      comparte este tipo de información, será tratada con el máximo nivel de confidencialidad y no
+      será objeto de tratamiento adicional.
+    </div>
+  </section>
+
+  <!-- 4 -->
+  <section id="s4">
+    <h2><span class="num">4</span>Finalidades del Tratamiento</h2>
+    <p>Sus datos personales serán utilizados exclusivamente para las siguientes finalidades:</p>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr><th>Finalidad</th><th>Base legal</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Contactar y calificar leads provenientes de campañas de Meta Ads</td>
+            <td>Consentimiento del titular</td>
+          </tr>
+          <tr>
+            <td>Presentar opciones de inmuebles ajustadas al perfil del cliente</td>
+            <td>Ejecución de relación precontractual</td>
+          </tr>
+          <tr>
+            <td>Agendar y gestionar visitas a inmuebles</td>
+            <td>Ejecución de relación precontractual</td>
+          </tr>
+          <tr>
+            <td>Realizar seguimiento comercial post-visita</td>
+            <td>Consentimiento del titular</td>
+          </tr>
+          <tr>
+            <td>Gestionar el proceso de referido HabiCredit (crédito hipotecario)</td>
+            <td>Consentimiento expreso del titular</td>
+          </tr>
+          <tr>
+            <td>Registrar y gestionar la información en el CRM (Google Sheets)</td>
+            <td>Interés legítimo del responsable</td>
+          </tr>
+          <tr>
+            <td>Cumplir obligaciones legales y regulatorias</td>
+            <td>Obligación legal</td>
+          </tr>
+          <tr>
+            <td>Enviar comunicaciones informativas y ofertas de inmuebles</td>
+            <td>Consentimiento del titular (revocable)</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p>
+      No realizaremos ningún tratamiento de sus datos para finalidades distintas a las aquí
+      descritas sin obtener previamente su consentimiento expreso.
+    </p>
+  </section>
+
+  <!-- 5 -->
+  <section id="s5">
+    <h2><span class="num">5</span>Derechos de los Titulares</h2>
+    <p>
+      En cumplimiento de la Ley 1581 de 2012, usted como titular de los datos personales tiene
+      los siguientes derechos:
+    </p>
+    <ul>
+      <li>
+        <strong>Conocer</strong> los datos personales que tenemos sobre usted, su origen y el uso
+        que se les da (Derecho de Acceso).
+      </li>
+      <li>
+        <strong>Actualizar</strong> sus datos cuando sean inexactos, incompletos o desactualizados
+        (Derecho de Rectificación).
+      </li>
+      <li>
+        <strong>Suprimir</strong> sus datos cuando no exista obligación legal de conservarlos o
+        cuando el tratamiento no cumpla con los principios establecidos en la Ley (Derecho al
+        Olvido).
+      </li>
+      <li>
+        <strong>Revocar</strong> la autorización otorgada para el tratamiento de sus datos en
+        cualquier momento, sin efectos retroactivos.
+      </li>
+      <li>
+        <strong>Solicitar prueba</strong> de la autorización otorgada al responsable del
+        tratamiento.
+      </li>
+      <li>
+        <strong>Presentar quejas</strong> ante la Superintendencia de Industria y Comercio (SIC)
+        por infracciones a la Ley 1581 de 2012.
+      </li>
+      <li>
+        <strong>Abstenerse de responder</strong> preguntas sobre datos sensibles o sobre datos de
+        niños, niñas y adolescentes.
+      </li>
+    </ul>
+  </section>
+
+  <!-- 6 -->
+  <section id="s6">
+    <h2><span class="num">6</span>Canales para Ejercer sus Derechos</h2>
+    <p>
+      Para ejercer cualquiera de los derechos mencionados, el titular o su representante legal
+      podrá comunicarse a través de los siguientes canales:
+    </p>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr><th>Canal</th><th>Detalle</th></tr>
+        </thead>
+        <tbody>
+          <tr><td><strong>Correo electrónico</strong></td><td>j.molinapalacio@icloud.com</td></tr>
+          <tr><td><strong>WhatsApp Business</strong></td><td>Disponible en horario hábil (lunes a sábado, 8:00 a.m. – 6:00 p.m.)</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p><strong>Procedimiento para consultas y reclamos:</strong></p>
+    <ul>
+      <li>
+        <strong>Consultas:</strong> serán atendidas en un plazo máximo de <strong>10 días
+        hábiles</strong> contados a partir de la fecha de recepción. Si no es posible
+        dar respuesta en ese término, se le informará antes del vencimiento indicando
+        la fecha definitiva de respuesta, la cual no podrá superar los 5 días hábiles
+        adicionales.
+      </li>
+      <li>
+        <strong>Reclamos:</strong> el reclamo se resolverá en un plazo máximo de
+        <strong>15 días hábiles</strong> contados a partir del día siguiente a la fecha
+        de recepción. Si el reclamo está incompleto, se solicitará al titular que lo
+        corrija en los 5 días hábiles siguientes.
+      </li>
+    </ul>
+    <div class="highlight">
+      Si considera que su solicitud no fue atendida de manera adecuada, podrá presentar
+      una queja ante la <strong>Superintendencia de Industria y Comercio (SIC)</strong>
+      en <a href="https://www.sic.gov.co" target="_blank" rel="noopener">www.sic.gov.co</a>.
+    </div>
+  </section>
+
+  <!-- 7 -->
+  <section id="s7">
+    <h2><span class="num">7</span>Transferencia y Transmisión de Datos</h2>
+    <p>
+      Sus datos podrán ser compartidos con los siguientes terceros, de forma estrictamente
+      necesaria para el cumplimiento de las finalidades descritas:
+    </p>
+    <ul>
+      <li>
+        <strong>Habi Technologies S.A.S.</strong> — empresa a través de la cual operamos
+        como broker autorizado, para el registro de leads y gestión de inventario de inmuebles.
+      </li>
+      <li>
+        <strong>Entidades financieras</strong> — únicamente en el marco del proceso HabiCredit
+        y con consentimiento expreso del titular.
+      </li>
+      <li>
+        <strong>Plataformas tecnológicas</strong> — Google (Sheets, Calendar), Meta (WhatsApp
+        Business, Facebook/Instagram Ads) y n8n, utilizadas como herramientas de gestión
+        operativa. Estas plataformas cuentan con sus propias políticas de privacidad.
+      </li>
+    </ul>
+    <p>
+      No vendemos, arrendamos ni comercializamos sus datos personales a terceros con fines
+      publicitarios o comerciales ajenos a la actividad inmobiliaria descrita en esta política.
+    </p>
+  </section>
+
+  <!-- 8 -->
+  <section id="s8">
+    <h2><span class="num">8</span>Seguridad de la Información</h2>
+    <p>
+      Adoptamos las medidas técnicas y organizativas razonables para proteger sus datos
+      personales contra acceso no autorizado, pérdida, alteración o divulgación indebida.
+      Entre estas medidas se incluyen:
+    </p>
+    <ul>
+      <li>Acceso restringido al CRM mediante credenciales personales.</li>
+      <li>Uso de cuentas de Google protegidas con autenticación en dos pasos.</li>
+      <li>Comunicaciones vía WhatsApp Business cifradas de extremo a extremo.</li>
+      <li>No compartir credenciales de acceso con terceros no autorizados.</li>
+    </ul>
+    <p>
+      En caso de que se presente un incidente de seguridad que pueda afectar sus datos,
+      le notificaremos en los términos y plazos establecidos por la normativa colombiana
+      vigente.
+    </p>
+  </section>
+
+  <!-- 9 -->
+  <section id="s9">
+    <h2><span class="num">9</span>Conservación de los Datos</h2>
+    <p>Sus datos personales serán conservados durante los siguientes períodos:</p>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr><th>Tipo de dato</th><th>Período de conservación</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Datos de leads no convertidos (frío / inactivos)</td>
+            <td>12 meses desde el último contacto</td>
+          </tr>
+          <tr>
+            <td>Datos de clientes en proceso de compra</td>
+            <td>Durante la vigencia de la relación comercial + 5 años</td>
+          </tr>
+          <tr>
+            <td>Datos de cierre de venta (promesas, escrituras)</td>
+            <td>10 años (según obligaciones legales comerciales)</td>
+          </tr>
+          <tr>
+            <td>Datos HabiCredit</td>
+            <td>Según lo establezca la entidad financiera vinculada</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p>
+      Una vez cumplidos los plazos anteriores, procederemos a eliminar o anonimizar sus
+      datos de manera segura.
+    </p>
+  </section>
+
+  <!-- 10 -->
+  <section id="s10">
+    <h2><span class="num">10</span>Uso de Cookies y Plataformas Digitales</h2>
+    <p>
+      Esta política también aplica a los datos recopilados a través de plataformas digitales
+      de terceros con las que interactuamos:
+    </p>
+    <ul>
+      <li>
+        <strong>Meta Ads (Facebook / Instagram):</strong> los anuncios que publicamos en estas
+        plataformas utilizan las herramientas de segmentación de Meta. Al interactuar con
+        nuestros anuncios, Meta puede recopilar datos según sus propias políticas de privacidad.
+        Puede consultar la política de Meta en
+        <a href="https://www.facebook.com/privacy/policy/" target="_blank" rel="noopener">
+          facebook.com/privacy/policy
+        </a>.
+      </li>
+      <li>
+        <strong>WhatsApp Business:</strong> la comunicación a través de WhatsApp está sujeta
+        a la Política de Privacidad de WhatsApp LLC. Los mensajes que intercambiamos son
+        cifrados de extremo a extremo.
+      </li>
+      <li>
+        <strong>Google Workspace:</strong> los datos almacenados en Google Sheets y Google
+        Calendar están sujetos a la Política de Privacidad de Google LLC.
+      </li>
+    </ul>
+    <p>
+      No instalamos cookies propias en ningún sitio web. Las plataformas de terceros
+      mencionadas pueden utilizar sus propias cookies según sus políticas independientes.
+    </p>
+  </section>
+
+  <!-- 11 -->
+  <section id="s11">
+    <h2><span class="num">11</span>Modificaciones a esta Política</h2>
+    <p>
+      Nos reservamos el derecho de actualizar o modificar la presente política en cualquier
+      momento para reflejar cambios en nuestra operación, cambios legales o mejoras en
+      nuestras prácticas de privacidad.
+    </p>
+    <p>
+      Cualquier modificación sustancial será comunicada a los titulares a través de los
+      canales de contacto disponibles (correo electrónico o WhatsApp Business) con un
+      mínimo de <strong>10 días hábiles</strong> de antelación a su entrada en vigor.
+    </p>
+    <p>
+      Le recomendamos revisar periódicamente este documento. El uso continuado de nuestros
+      servicios tras la notificación de cambios implicará la aceptación de la política
+      actualizada.
+    </p>
+  </section>
+
+  <!-- 12 -->
+  <section id="s12">
+    <h2><span class="num">12</span>Vigencia</h2>
+    <p>
+      La presente Política de Tratamiento de Datos Personales rige a partir del
+      <strong>16 de abril de 2026</strong> y deroga cualquier versión anterior.
+    </p>
+    <div class="highlight">
+      Si tiene preguntas sobre esta política o sobre el tratamiento de sus datos personales,
+      contáctenos en <strong>j.molinapalacio@icloud.com</strong> — atendemos en horario hábil
+      de lunes a sábado, 8:00 a.m. a 6:00 p.m. (hora Colombia).
+    </div>
+  </section>
+
+</div><!-- /container -->
+
+<!-- ════════════════ FOOTER ════════════════ -->
+<footer>
+  <p>
+    &copy; 2026 Asesoría Inmobiliaria Habi — Medellín, Colombia.
+    Todos los derechos reservados.
+  </p>
+  <p style="margin-top:8px;">
+    Documento elaborado en cumplimiento de la
+    <strong>Ley 1581 de 2012</strong> y el <strong>Decreto 1377 de 2013</strong>
+    (Protección de Datos Personales — Colombia).
+  </p>
+</footer>
+
+</body>
+</html>
