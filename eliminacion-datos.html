@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Eliminación de Datos de Usuario — Habi Broker Medellín</title>
+  <style>
+    :root {
+      --primary: #1a3a5c;
+      --accent:  #e8a020;
+      --green:   #16a34a;
+      --text:    #1f2937;
+      --muted:   #6b7280;
+      --border:  #e5e7eb;
+      --bg:      #f9fafb;
+      --white:   #ffffff;
+      --radius:  8px;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+      font-size: 16px;
+      line-height: 1.75;
+      color: var(--text);
+      background: var(--bg);
+    }
+
+    /* ── Header ── */
+    header {
+      background: var(--primary);
+      color: var(--white);
+      padding: 48px 24px 40px;
+      text-align: center;
+    }
+
+    header .badge {
+      display: inline-block;
+      background: var(--accent);
+      color: var(--white);
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      padding: 4px 12px;
+      border-radius: 20px;
+      margin-bottom: 16px;
+    }
+
+    header h1 {
+      font-size: clamp(22px, 4vw, 32px);
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 14px;
+      opacity: .75;
+      max-width: 520px;
+      margin: 0 auto;
+    }
+
+    /* ── Layout ── */
+    .container {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 48px 24px 80px;
+    }
+
+    /* ── Cards ── */
+    .card {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 36px 40px;
+      margin-bottom: 24px;
+    }
+
+    .card h2 {
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--primary);
+      padding-bottom: 12px;
+      border-bottom: 2px solid var(--accent);
+      margin-bottom: 20px;
+    }
+
+    .card p { margin-bottom: 14px; }
+    .card p:last-child { margin-bottom: 0; }
+
+    .card ul, .card ol {
+      padding-left: 22px;
+      margin-bottom: 14px;
+    }
+
+    .card li { margin-bottom: 10px; }
+    .card strong { color: var(--primary); }
+
+    /* ── Steps ── */
+    .steps { counter-reset: step; list-style: none; padding: 0; }
+
+    .steps li {
+      counter-increment: step;
+      display: flex;
+      gap: 16px;
+      align-items: flex-start;
+      margin-bottom: 20px;
+    }
+
+    .steps li::before {
+      content: counter(step);
+      background: var(--primary);
+      color: var(--white);
+      font-size: 13px;
+      font-weight: 700;
+      min-width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+
+    /* ── Highlight ── */
+    .highlight {
+      background: #eff6ff;
+      border-left: 4px solid var(--primary);
+      border-radius: 0 var(--radius) var(--radius) 0;
+      padding: 16px 20px;
+      margin: 16px 0;
+      font-size: 15px;
+    }
+
+    .highlight.success {
+      background: #f0fdf4;
+      border-color: var(--green);
+    }
+
+    /* ── CTA button ── */
+    .cta-wrap { text-align: center; margin: 28px 0 8px; }
+
+    .cta {
+      display: inline-block;
+      background: var(--primary);
+      color: var(--white);
+      font-size: 15px;
+      font-weight: 600;
+      padding: 14px 32px;
+      border-radius: var(--radius);
+      text-decoration: none;
+      transition: opacity .2s;
+    }
+
+    .cta:hover { opacity: .85; }
+
+    .cta-sub {
+      display: block;
+      font-size: 13px;
+      color: var(--muted);
+      margin-top: 10px;
+    }
+
+    /* ── Table ── */
+    .table-wrap { overflow-x: auto; margin: 16px 0; }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 14px;
+    }
+
+    thead th {
+      background: var(--primary);
+      color: var(--white);
+      padding: 10px 14px;
+      text-align: left;
+      font-weight: 600;
+    }
+
+    tbody tr:nth-child(even) { background: var(--bg); }
+
+    tbody td {
+      padding: 10px 14px;
+      border-bottom: 1px solid var(--border);
+      vertical-align: top;
+    }
+
+    /* ── Footer ── */
+    footer {
+      text-align: center;
+      padding: 32px 24px;
+      font-size: 13px;
+      color: var(--muted);
+      border-top: 1px solid var(--border);
+    }
+
+    /* ── Responsive ── */
+    @media (max-width: 600px) {
+      .card { padding: 24px 20px; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ════════════════ HEADER ════════════════ -->
+<header>
+  <div class="badge">Derecho al Olvido</div>
+  <h1>Eliminación de Datos de Usuario</h1>
+  <p>Asesoría Inmobiliaria Habi — Medellín, Colombia<br>
+     En cumplimiento de la Ley 1581 de 2012 y las políticas de Meta Platforms</p>
+</header>
+
+<!-- ════════════════ CONTENT ════════════════ -->
+<div class="container">
+
+  <!-- Qué datos tenemos -->
+  <div class="card">
+    <h2>¿Qué datos podemos tener sobre ti?</h2>
+    <p>
+      Si interactuaste con nuestros anuncios en Facebook o Instagram, o nos contactaste
+      vía WhatsApp Business, es posible que tengamos registrada la siguiente información:
+    </p>
+    <ul>
+      <li>Nombre completo y número de teléfono (WhatsApp)</li>
+      <li>Correo electrónico (si lo proporcionaste en un formulario de Meta Ads)</li>
+      <li>Perfil inmobiliario: zona de interés, presupuesto, tipo de inmueble</li>
+      <li>Historial de conversaciones relacionadas con asesoría inmobiliaria</li>
+      <li>Datos financieros (únicamente si iniciaste proceso HabiCredit)</li>
+    </ul>
+    <div class="highlight">
+      No tenemos acceso a tu contraseña de Facebook/Instagram ni a información de tu
+      cuenta de Meta. Solo procesamos los datos que tú nos proporcionas directamente.
+    </div>
+  </div>
+
+  <!-- Cómo solicitar eliminación -->
+  <div class="card">
+    <h2>¿Cómo solicitar la eliminación de tus datos?</h2>
+    <p>
+      Puedes solicitar la eliminación de todos tus datos personales de nuestros sistemas
+      en cualquier momento. El proceso es gratuito y sin necesidad de justificación.
+    </p>
+
+    <ol class="steps">
+      <li>
+        <div>
+          <strong>Envía tu solicitud por correo electrónico</strong><br>
+          Escribe a <strong>j.molinapalacio@icloud.com</strong> con el asunto:
+          <em>"Solicitud de eliminación de datos personales"</em>.
+        </div>
+      </li>
+      <li>
+        <div>
+          <strong>Incluye en el mensaje</strong><br>
+          Tu nombre completo y el número de teléfono o correo con el que nos contactaste,
+          para que podamos identificar tu registro correctamente.
+        </div>
+      </li>
+      <li>
+        <div>
+          <strong>Confirmación de recepción</strong><br>
+          Recibirás una confirmación de tu solicitud dentro de las
+          <strong>48 horas hábiles</strong> siguientes.
+        </div>
+      </li>
+      <li>
+        <div>
+          <strong>Eliminación efectiva</strong><br>
+          Procederemos a eliminar todos tus datos de nuestros sistemas (CRM, historial
+          de WhatsApp gestionado, registros internos) en un plazo máximo de
+          <strong>15 días hábiles</strong> contados desde la confirmación de tu identidad.
+        </div>
+      </li>
+      <li>
+        <div>
+          <strong>Notificación de eliminación</strong><br>
+          Te enviaremos un correo confirmando que la eliminación fue completada, con el
+          detalle de los datos suprimidos.
+        </div>
+      </li>
+    </ol>
+
+    <div class="cta-wrap">
+      <a class="cta" href="mailto:j.molinapalacio@icloud.com?subject=Solicitud%20de%20eliminaci%C3%B3n%20de%20datos%20personales&body=Hola%2C%20solicito%20la%20eliminaci%C3%B3n%20de%20mis%20datos%20personales.%0A%0ANombre%3A%20%0ATel%C3%A9fono%20o%20correo%20con%20el%20que%20me%20contact%C3%A9%3A%20">
+        Solicitar eliminación por correo
+      </a>
+      <span class="cta-sub">Se abrirá tu cliente de correo con el asunto pre-completado</span>
+    </div>
+  </div>
+
+  <!-- Plazos y excepciones -->
+  <div class="card">
+    <h2>Plazos y excepciones</h2>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr><th>Situación</th><th>Plazo / Acción</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Solicitud de eliminación recibida</td>
+            <td>Confirmación en 48 horas hábiles</td>
+          </tr>
+          <tr>
+            <td>Eliminación efectiva de datos</td>
+            <td>Máximo 15 días hábiles desde confirmación de identidad</td>
+          </tr>
+          <tr>
+            <td>Datos vinculados a una transacción inmobiliaria cerrada</td>
+            <td>Se conservan hasta 10 años por obligación legal (Código de Comercio colombiano)</td>
+          </tr>
+          <tr>
+            <td>Datos en poder de entidades financieras (HabiCredit)</td>
+            <td>La solicitud se traslada a la entidad correspondiente; no están bajo nuestro control directo</td>
+          </tr>
+          <tr>
+            <td>Datos en plataformas de Meta (Facebook/Instagram)</td>
+            <td>Deben gestionarse directamente en la Configuración de privacidad de tu cuenta Meta</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- Datos en Meta -->
+  <div class="card">
+    <h2>Datos almacenados en Meta Platforms</h2>
+    <p>
+      Los datos que Meta (Facebook / Instagram) recopiló cuando interactuaste con nuestros
+      anuncios <strong>no están bajo nuestro control</strong> — son gestionados directamente
+      por Meta Platforms, Inc.
+    </p>
+    <p>Para eliminar esos datos, debes hacerlo desde tu cuenta de Facebook:</p>
+    <ol class="steps">
+      <li>
+        <div>
+          Ve a <strong>Configuración y privacidad → Configuración → Tu información en Facebook
+          → Actividad fuera de Facebook</strong>.
+        </div>
+      </li>
+      <li>
+        <div>
+          Selecciona <strong>"Borrar historial"</strong> para eliminar la actividad de
+          anunciantes, incluida la nuestra.
+        </div>
+      </li>
+      <li>
+        <div>
+          Para una eliminación total de tu cuenta, usa la opción
+          <strong>"Desactivar o eliminar cuenta"</strong> en la configuración de Meta.
+        </div>
+      </li>
+    </ol>
+    <div class="highlight">
+      Consulta la política de privacidad de Meta en
+      <a href="https://www.facebook.com/privacy/policy/" target="_blank" rel="noopener">
+        facebook.com/privacy/policy
+      </a>
+      para más información sobre cómo gestionan tus datos.
+    </div>
+  </div>
+
+  <!-- Confirmación -->
+  <div class="card">
+    <h2>Tu derecho está garantizado</h2>
+    <div class="highlight success">
+      En cumplimiento del <strong>artículo 8 de la Ley 1581 de 2012</strong> (Colombia),
+      tienes derecho a solicitar la supresión de tus datos en cualquier momento. No
+      condicionamos la eliminación a ningún requisito diferente a verificar tu identidad.
+      Si no atendemos tu solicitud en los plazos indicados, puedes presentar una queja
+      ante la <strong>Superintendencia de Industria y Comercio (SIC)</strong> en
+      <a href="https://www.sic.gov.co" target="_blank" rel="noopener">www.sic.gov.co</a>.
+    </div>
+  </div>
+
+</div><!-- /container -->
+
+<!-- ════════════════ FOOTER ════════════════ -->
+<footer>
+  <p>
+    &copy; 2026 Asesoría Inmobiliaria Habi — Medellín, Colombia.
+  </p>
+  <p style="margin-top:8px;">
+    Documento en cumplimiento de la <strong>Ley 1581 de 2012</strong>,
+    <strong>Decreto 1377 de 2013</strong> y las
+    <strong>Políticas de Plataforma de Meta Platforms, Inc.</strong>
+  </p>
+  <p style="margin-top:8px;">
+    <a href="index.html">← Ver Política de Privacidad completa</a>
+  </p>
+</footer>
+
+</body>
+</html>
